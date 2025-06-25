@@ -1,0 +1,63 @@
+# This file configures the analyzer for optimal performance and clean code
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  exclude:
+    - "**/*.g.dart"
+    - "**/*.freezed.dart"
+  language:
+    strict-casts: true
+    strict-inference: true
+    strict-raw-types: true
+
+linter:
+  rules:
+    # Performance-focused rules
+    avoid_function_literals_in_foreach_calls: true
+    avoid_renaming_method_parameters: true
+    avoid_returning_null_for_void: true
+    avoid_slow_async_io: true
+    avoid_types_as_parameter_names: true
+    avoid_unused_constructor_parameters: true
+    avoid_void_async: true
+    cancel_subscriptions: true
+    close_sinks: true
+    literal_only_boolean_expressions: true
+    no_adjacent_strings_in_list: true
+    prefer_asserts_in_initializer_lists: true
+    prefer_const_constructors: true
+    prefer_const_constructors_in_immutables: true
+    prefer_const_declarations: true
+    prefer_const_literals_to_create_immutables: true
+    prefer_final_fields: true
+    prefer_final_in_for_each: true
+    prefer_final_locals: true
+    prefer_for_elements_to_map_fromIterable: true
+    prefer_if_elements_to_conditional_expressions: true
+    prefer_initializing_formals: true
+    prefer_inlined_adds: true
+    prefer_int_literals: true
+    prefer_is_empty: true
+    prefer_is_not_empty: true
+    prefer_single_quotes: true
+    prefer_spread_collections: true
+    sized_box_for_whitespace: true
+    sort_child_properties_last: true
+    sort_constructors_first: true
+    unawaited_futures: true
+    unnecessary_await_in_return: true
+    unnecessary_const: true
+    unnecessary_new: true
+    unnecessary_null_in_if_null_operators: true
+    unnecessary_overrides: true
+    unnecessary_parenthesis: true
+    unnecessary_statements: true
+    unnecessary_string_interpolations: true
+    use_full_hex_values_for_flutter_colors: true
+    use_function_type_syntax_for_parameters: true
+    use_rethrow_when_possible: true
+    
+    # Disable some rules that might add overhead
+    avoid_print: false
+    avoid_catches_without_on_clauses: false
+    avoid_catching_errors: false
